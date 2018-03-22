@@ -1,0 +1,9 @@
+<button mat-icon-button color="primary" (click)="add()">
+    <mat-icon aria-label="Add User">note_add
+    </mat-icon>
+</button>
+<br>
+<ng-container *ngFor="let user of users">
+    <s-user-row [user]="user" (deleteEvent)="delete($event)" (editEvent)="edit($event)"></s-user-row>
+    <br>
+</ng-container>

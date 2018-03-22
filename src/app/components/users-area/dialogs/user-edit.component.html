@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>SharpApp</h2>
+<mat-dialog-content>
+    <form [formGroup]="userForm">
+        <mat-form-field>
+            <input matInput type="text" placeholder="FirstName" formControlName="firstname">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="text" placeholder="LastName" formControlName="lastname">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="text" placeholder="Email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="text" placeholder="Date" formControlName="date">
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="cancel()">Cancel</button>
+    <button mat-button (click)="submit()" [disabled]="!userForm.valid">Save</button>
+</mat-dialog-actions>

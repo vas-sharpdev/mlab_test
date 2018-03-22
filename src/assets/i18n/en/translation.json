@@ -1,0 +1,32 @@
+{
+    "CommonGroup": {
+        "FirstName": "First Name",
+        "LastName": "Last Name",
+        "StreetAddress": "Street Address",
+        "ZipCode": "Zip Code",
+        "City": "City",
+        "Email": "Email",
+        "MobilePhone": "MobilePhone"
+    },
+    "LoginGroup": {
+        "Login": "Name:",
+        "Password": "Password:",
+        "SignIn": "Sign In",
+        "ToRegistration": "I don't have an account. Sign Up",
+        "Errors": {
+            "Name-required": "Input user name",
+            "Password-required": "Input password"
+        }
+    },
+    "RegistrationGroup": {
+        "SignUp": "Sign Up",
+        "ToLogin": "I already have an account. Sign In",
+        "Password": "Password",
+        "PasswordConfirm": "Password Confirmation",
+        "Errors": {
+            "Email-required": "Input email",
+            "Email-email": "Email format",
+            "Password-equal": "Passwords don't match"
+        }
+    }   
+}

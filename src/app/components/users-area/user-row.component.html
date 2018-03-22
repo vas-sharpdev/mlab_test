@@ -1,0 +1,19 @@
+<mat-form-field>
+    <input matInput placeholder="firstname" value="{{user.firstname}}" readonly>
+</mat-form-field>
+<mat-form-field>
+    <input matInput placeholder="lastname" value="{{user.lastname}}" readonly>
+</mat-form-field>
+<mat-form-field>
+    <input matInput placeholder="email" value="{{user.email}}" readonly>
+</mat-form-field>
+<mat-form-field>
+    <input matInput placeholder="date" value="{{user.date}}" readonly>
+</mat-form-field>
+<button mat-icon-button color="primary" (click)="edit()">
+    <mat-icon aria-label="Edit user">mode_edit
+    </mat-icon>
+</button>
+<button mat-icon-button color="warn" (click)="delete()">
+    <mat-icon aria-label="Delete User">delete</mat-icon>
+</button>

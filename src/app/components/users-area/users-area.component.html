@@ -1,0 +1,4 @@
+<ng-container *ngIf="users$ | async let users;else wait_template">
+    <s-users-list [users]="users" (deleteEvent)="delete($event)" (editEvent)="edit($event)" (addEvent)="add($event)"></s-users-list>
+</ng-container>
+<ng-template #wait_template>is loading...</ng-template>
